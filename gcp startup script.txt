@@ -1,0 +1,182 @@
+
+(using powershell as admin)
+
+https://weblog.west-wind.com/posts/2017/may/25/automating-iis-feature-installation-with-powershell
+
+Get-WindowsOptionalFeature -Online | where FeatureName -like 'IIS-*'
+
+
+FeatureName : IIS-WebServerRole
+State       : Disabled
+
+FeatureName : IIS-WebServer
+State       : Disabled
+
+FeatureName : IIS-CommonHttpFeatures
+State       : Disabled
+
+FeatureName : IIS-Security
+State       : Disabled
+
+FeatureName : IIS-RequestFiltering
+State       : Disabled
+
+FeatureName : IIS-StaticContent
+State       : Disabled
+
+FeatureName : IIS-DefaultDocument
+State       : Disabled
+
+FeatureName : IIS-DirectoryBrowsing
+State       : Disabled
+
+FeatureName : IIS-HttpErrors
+State       : Disabled
+
+FeatureName : IIS-HttpRedirect
+State       : Disabled
+
+FeatureName : IIS-WebDAV
+State       : Disabled
+
+FeatureName : IIS-ApplicationDevelopment
+State       : Disabled
+
+FeatureName : IIS-WebSockets
+State       : Disabled
+
+FeatureName : IIS-ApplicationInit
+State       : Disabled
+
+FeatureName : IIS-NetFxExtensibility
+State       : Disabled
+
+FeatureName : IIS-NetFxExtensibility45
+State       : Disabled
+
+FeatureName : IIS-ISAPIExtensions
+State       : Disabled
+
+FeatureName : IIS-ISAPIFilter
+State       : Disabled
+
+FeatureName : IIS-ASPNET
+State       : Disabled
+
+FeatureName : IIS-ASPNET45
+State       : Disabled
+
+FeatureName : IIS-ASP
+State       : Disabled
+
+FeatureName : IIS-CGI
+State       : Disabled
+
+FeatureName : IIS-ServerSideIncludes
+State       : Disabled
+
+FeatureName : IIS-HealthAndDiagnostics
+State       : Disabled
+
+FeatureName : IIS-HttpLogging
+State       : Disabled
+
+FeatureName : IIS-LoggingLibraries
+State       : Disabled
+
+FeatureName : IIS-RequestMonitor
+State       : Disabled
+
+FeatureName : IIS-HttpTracing
+State       : Disabled
+
+FeatureName : IIS-CustomLogging
+State       : Disabled
+
+FeatureName : IIS-ODBCLogging
+State       : Disabled
+
+FeatureName : IIS-CertProvider
+State       : Disabled
+
+FeatureName : IIS-BasicAuthentication
+State       : Disabled
+
+FeatureName : IIS-WindowsAuthentication
+State       : Disabled
+
+FeatureName : IIS-DigestAuthentication
+State       : Disabled
+
+FeatureName : IIS-ClientCertificateMappingAuthentication
+State       : Disabled
+
+FeatureName : IIS-IISCertificateMappingAuthentication
+State       : Disabled
+
+FeatureName : IIS-URLAuthorization
+State       : Disabled
+
+FeatureName : IIS-IPSecurity
+State       : Disabled
+
+FeatureName : IIS-Performance
+State       : Disabled
+
+FeatureName : IIS-HttpCompressionStatic
+State       : Disabled
+
+FeatureName : IIS-HttpCompressionDynamic
+State       : Disabled
+
+FeatureName : IIS-WebServerManagementTools
+State       : Disabled
+
+FeatureName : IIS-ManagementConsole
+State       : Disabled
+
+FeatureName : IIS-LegacySnapIn
+State       : Disabled
+
+FeatureName : IIS-ManagementScriptingTools
+State       : Disabled
+
+FeatureName : IIS-ManagementService
+State       : Disabled
+
+FeatureName : IIS-IIS6ManagementCompatibility
+State       : Disabled
+
+FeatureName : IIS-Metabase
+State       : Disabled
+
+FeatureName : IIS-WMICompatibility
+State       : Disabled
+
+FeatureName : IIS-LegacyScripts
+State       : Disabled
+
+FeatureName : IIS-FTPServer
+State       : Disabled
+
+FeatureName : IIS-FTPSvc
+State       : Disabled
+
+FeatureName : IIS-FTPExtensibility
+State       : Disabled
+
+FeatureName : IIS-HostableWebCore
+State       : Disabled
+
+
+
+OTHER PARAMS:
+
+PS C:\Windows\system32> Get-WindowsOptionalFeature -Online | where FeatureName -like 'IIS-ASPNET*'
+
+
+FeatureName : IIS-ASPNET
+State       : Disabled
+
+FeatureName : IIS-ASPNET45
+State       : Disabled

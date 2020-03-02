@@ -1,0 +1,5 @@
+
+
+networking diagram - loadbalacing tcp/udp
+
+which solution to use for data/storage -- for review
