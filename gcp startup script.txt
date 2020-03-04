@@ -1,4 +1,6 @@
 
+https://www.tenforums.com/general-support/50444-how-run-ps1-file-administrator.html
+
 (using powershell as admin)
 
 https://weblog.west-wind.com/posts/2017/may/25/automating-iis-feature-installation-with-powershell
