@@ -3,7 +3,7 @@ provider "google" {
 
   credentials = file("/downloads/auto-scaling.json")
 
-  project = "<PROJECT_NAME>"
+  project = "using-terraf-159-fc04cd"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
@@ -13,7 +13,7 @@ resource "google_compute_network" "vpc_network" {
 }
 resource "google_compute_autoscaler" "foobar" {
   name   = "my-autoscaler"
-  project = "<PROJECT_NAME>"
+  project = "using-terraf-159-fc04cd"
   zone   = "us-central1-c"
   target = google_compute_instance_group_manager.foobar.self_link
 
@@ -32,7 +32,7 @@ resource "google_compute_instance_template" "foobar" {
   name           = "my-instance-template"
   machine_type   = "n1-standard-1"
   can_ip_forward = false
-  project = "<PROJECT_NAME>"
+  project = "using-terraf-159-fc04cd"
   tags = ["foo", "bar", "allow-lb-service"]
 
   disk {
@@ -54,14 +54,14 @@ resource "google_compute_instance_template" "foobar" {
 
 resource "google_compute_target_pool" "foobar" {
   name = "my-target-pool"
-  project = "<PROJECT_NAME>"
+  project = "using-terraf-159-fc04cd"
   region = "us-central1"
 }
 
 resource "google_compute_instance_group_manager" "foobar" {
   name = "my-igm"
   zone = "us-central1-c"
-  project = "<PROJECT_NAME>"
+  project = "using-terraf-159-fc04cd"
   version {
     instance_template  = google_compute_instance_template.foobar.self_link
     name               = "primary"
